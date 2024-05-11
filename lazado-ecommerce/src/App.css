@@ -1,0 +1,86 @@
+body {
+  background-color: red !important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+.navbar .links a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Main Content Styles */
+.main-content {
+  display: flex;
+  justify-content: space-between; /* Adjusts the distribution of space between grid and cart */
+  align-items: flex-start; /* Aligns items at the top */
+  width: 100%; /* Ensure the container takes full width */
+  height: 100vh; /* Adjust based on your design preference */
+}
+
+/* Product Grid Styles */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap in the container */
+  justify-content: space-around;
+  flex-grow: 3; /* Gives more room to the product grid */
+  padding: 20px;
+}
+
+.product-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 150px; /* Fixed width for consistent sizing */
+  margin-bottom: 20px; /* Adds space between rows of items */
+  text-align: center; /* Centers the content of each product item */
+  overflow: hidden; /* Prevents content from overflowing */
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  width: 100%; /* Ensures the button stretches to fill container */
+}
+
+/* Shopping Cart Styles */
+.shopping-cart {
+  width: 300px; /* Fixed width for the cart */
+  padding: 20px;
+  border-left: 1px solid #ccc;
+  flex-grow: 1; /* Limits the cart to a smaller fixed flex basis */
+  height: fit-content; /* Fits the content's height */
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between; /* Spaces out item name and remove button */
+  align-items: center; /* Aligns items vertically */
+  margin-bottom: 10px; /* Adds bottom margin to each cart item */
+  overflow: hidden; /* Prevents content from overflowing */
+}
+
+.cart-item button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
